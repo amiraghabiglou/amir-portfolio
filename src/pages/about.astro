@@ -1,0 +1,84 @@
+---
+// src/pages/about.astro
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="About | Amir Aghabiglou, PhD">
+  <div class="w-full py-12">
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+
+      <header class="mb-16 border-b border-slate-200 pb-12">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6">
+          Profile & Background
+        </h1>
+        <p class="text-xl text-slate-600 leading-relaxed max-w-2xl">
+          I am a PhD-level AI Engineer combining fundamental computer science principles with deep domain expertise in mechatronic and mechanical engineering.
+        </p>
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+        <div class="md:col-span-1 space-y-8">
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4">Current Status</h3>
+            <div class="space-y-4 text-sm">
+              <div>
+                <strong class="block text-slate-900">Role</strong>
+                <span class="text-slate-600">Research Associate (Applied AI) at Heriot-Watt University</span>
+              </div>
+              <div>
+                <strong class="block text-slate-900">Experience</strong>
+                <span class="text-slate-600">6+ Years</span>
+              </div>
+              <div>
+                <strong class="block text-slate-900">Work Authorization</strong>
+                <span class="text-emerald-600 font-medium">UK Indefinite Leave to Remain (ILR) – No sponsorship required</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="md:col-span-2 space-y-8 text-slate-600 leading-relaxed text-lg">
+
+          <p>
+            My engineering philosophy is rooted in solving complex physical inverse problems through applied machine learning. With a PhD in Mechatronic Engineering and degrees in Mechanical Engineering, I approach AI not just as a software abstraction, but as a tool to interact with and optimize the physical world.
+          </p>
+
+          <p>
+            Currently, at Heriot-Watt University, I am deploying novel Transformer-based architectures for massive-scale vision tasks. My focus is on translating cutting-edge generative AI research into robust, highly efficient products capable of running on HPC infrastructure.
+          </p>
+
+          <div class="pt-8 border-t border-slate-200">
+            <h3 class="text-sm font-bold tracking-widest text-blue-600 uppercase mb-6">Academic Foundation</h3>
+            <ul class="space-y-4">
+              <li class="flex gap-4">
+                <span class="text-slate-400 font-bold">&bull;</span>
+                <div>
+                  <strong class="block text-slate-900">PhD in Mechatronic Engineering</strong>
+                  <span class="text-sm text-slate-500">Istanbul Technical University</span>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="text-slate-400 font-bold">&bull;</span>
+                <div>
+                  <strong class="block text-slate-900">MSc in Mechanical Engineering</strong>
+                  <span class="text-sm text-slate-500">University of Tabriz</span>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="text-slate-400 font-bold">&bull;</span>
+                <div>
+                  <strong class="block text-slate-900">BSc in Mechanical Engineering</strong>
+                  <span class="text-sm text-slate-500">Tabriz Azad University</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+</Layout>

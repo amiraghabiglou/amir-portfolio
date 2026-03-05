@@ -1,17 +1,34 @@
 ---
-
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
 ---
+<Layout title="Amir Aghabiglou, PhD | AI Systems Engineer">
+  <main class="flex-grow flex flex-col items-center justify-center px-6 text-center max-w-5xl mx-auto py-24">
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+    <div class="space-y-4 mb-10 mt-10">
+      <h2 class="text-sm md:text-base font-bold tracking-widest text-blue-600 uppercase">
+        Amir Aghabiglou, PhD
+      </h2>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+        Architecting High-Performance AI for <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Complex Physical Systems</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mt-6">
+        Bridging heavy-compute Machine Learning—from Large Vision Models to SLM-driven reasoning—with sustainable energy operations and industrial challenges.
+      </p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mt-8">
+
+      <a href="/engineering" class="px-8 py-5 bg-slate-900 text-white font-medium rounded-xl hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl ring-1 ring-slate-900 text-left group">
+        <span class="block text-lg mb-1 group-hover:-translate-y-0.5 transition-transform">View Engineering Portfolio &rarr;</span>
+        <span class="block text-sm text-slate-400 font-normal">HPC, MLOps, & LVM Architecture</span>
+      </a>
+
+      <a href="/solutions" class="px-8 py-5 bg-white text-slate-900 font-medium rounded-xl hover:bg-slate-50 transition-all shadow-lg hover:shadow-xl ring-1 ring-slate-200 text-left group">
+        <span class="block text-lg mb-1 text-blue-600 group-hover:-translate-y-0.5 transition-transform">Explore Energy AI Solutions &rarr;</span>
+        <span class="block text-sm text-slate-500 font-normal">Fraud Detection & Building Efficiency</span>
+      </a>
+
+    </div>
+  </main>
+</Layout>
